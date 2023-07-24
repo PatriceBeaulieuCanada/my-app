@@ -3,6 +3,7 @@ import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 import { useState,useMemo,useRef} from 'react'
 import Panel1 from '../Panels/Panel1';
+import Panel2 from '../Panels/Panel2';
 
 const MainView = () =>{
     const param = { action: ''}
@@ -74,7 +75,10 @@ const MainView = () =>{
 
                         <PanelsDirective>
                             <PanelDirective sizeX={1} sizeY={1} row={0} col={0} content={panetContent}></PanelDirective>
-                                                  
+                            <PanelDirective sizeX={2} sizeY={1} row={0} col={1} content={panetContent}></PanelDirective>
+                            <PanelDirective sizeX={2} sizeY={1} row={0} col={3} content={panetContent}></PanelDirective>
+                            <PanelDirective sizeX={3} sizeY={1} row={1} col={0} content={Panel2}></PanelDirective>
+                            <PanelDirective sizeX={2} sizeY={1} row={1} col={3} content={Panel2}></PanelDirective>   
                         </PanelsDirective>                
                     </DashboardLayoutComponent>
                 </div>
